@@ -1,0 +1,13 @@
+:root {
+    --color-white: white;
+    --color-red: #cd3d0f;
+    --color-black: black;
+    --color-light-black: #363636;
+    --color-blue: #2d64e6;
+    --color-grey: #bebcbb;
+    --color-light-grey: #d9dadc;
+}
+
+.container-fluid {
+    background-color: var(--color-black);
+}
