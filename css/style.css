@@ -8,6 +8,25 @@
     --color-light-grey: #d9dadc;
 }
 
-.container-fluid {
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Helvetica, arial, sans-serif;
+}
+
+.nav-top {
     background-color: var(--color-black);
+}
+
+.btn-nav::after {
+    content: none;
+}
+
+.sign-in {
+    background-color: var(--color-light-black);
+    color: var(--color-white);
+    border-radius: 40%;
+    padding: 5px;
 }
