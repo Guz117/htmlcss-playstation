@@ -8,6 +8,14 @@
     --color-light-grey: #d9dadc;
 }
 
+.flex {
+    display: flex;
+}
+
+.my {
+    justify-content: flex-end;
+}
+
 a {
     text-decoration: none;
 }
