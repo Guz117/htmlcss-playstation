@@ -48,6 +48,7 @@ nav {
 header {
     width: 100%;
     position: fixed;
+    z-index: 999;
 }
 
 /* /nav bar */    
@@ -58,7 +59,6 @@ header {
     width: 100%;
     color: var(--color-white);
     padding-top: 5em;
-    background-color: var(--color-red);
 }
 
 .bg-jambotron {
@@ -113,7 +113,31 @@ header {
     color: var(--color-white);
 }
 
+.device {
+    opacity: 0.7;
+}
 
+.device:hover {
+    opacity: 1;
+    border-bottom: 2px solid var(--color-blue);
+}
+/* no limits */
+
+/* it take two */
+.it-take-two {
+    width: 100%;
+    color: var(--color-white);
+    padding-top: 5em;
+}
+
+.bg-it-take-two {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5em;
+}
+/* it take two */
 
 @media screen and (max-width: 992px) {
     .dropdown-menu .px-20 {
