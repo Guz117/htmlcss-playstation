@@ -7,6 +7,7 @@
     --color-grey: #bebcbb;
     --color-light-grey: #d9dadc;
     --color-dark-blue: #161c3b;
+    --color-blue-footer: #00439c;
 }
 
 /* Extend Bootstrap Utilities */
@@ -208,8 +209,46 @@ header {
     color: var(--color-black);
 }
 
+/* social */
 .social img {
     width: 100%;
+}
+/* /social */
+
+/* footer */
+.footer {
+    background-color: var(--color-blue-footer);
+    color: var(--color-white);
+}
+
+
+.globe {
+    width: 16px;
+    display: inline-block;
+}
+
+.globe img {
+    width: 100%;
+}
+
+.region {
+    font-size: 0.8em;
+}
+
+.interactive {
+    width: 200px;
+}
+
+.interactive img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer a {
+    color: white;
 }
 
 @media screen and (max-width: 992px) {
