@@ -208,9 +208,16 @@ header {
     color: var(--color-black);
 }
 
+.social img {
+    width: 100%;
+}
+
 @media screen and (max-width: 992px) {
     .dropdown-menu .px-20 {
         padding: 0!important;
+    }
+    .bg-ps-plus {
+        background-image: none;
     }
 
 }
