@@ -21,7 +21,7 @@ body {
     font-family: Helvetica, arial, sans-serif;
 }
 
-/* nav */
+/* nav bar */
 .nav-top {
     background-color: var(--color-black);
 }
@@ -45,9 +45,40 @@ nav {
     font-weight: 600;
 }
 
+
+
 @media screen and (max-width: 992px) {
     .dropdown-menu .px-20 {
         padding: 0!important;
     }
 }
-    
+/* /nav bar */    
+
+/* jambotron */
+
+.jambotron {
+    width: 100%;
+    background-image: url(../img/jumbo-bg.png);
+    color: var(--color-white);
+
+}
+
+.banner-returnal {
+    width: 250px;
+}
+
+.cont {
+    padding-top: 50%;
+    padding-bottom: 10%;
+}
+
+.returenal-text {
+    font-weight: 600;
+}
+
+.buy {
+    background-color: var(--color-red);
+    border-radius: 15px;
+    color: var(--color-white);
+}
+
