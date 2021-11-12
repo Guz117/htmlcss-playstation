@@ -251,6 +251,10 @@ ul {
     color: white;
 }
 
+.link-footer-ms {
+    display: none;
+}
+
 @media screen and (max-width: 992px) {
     .dropdown-menu .px-20 {
         padding: 0!important;
@@ -258,5 +262,11 @@ ul {
     .bg-ps-plus {
         background-image: none;
     }
-
+    .link-footer-lg {
+        display: none;
+    }
+    .link-footer-ms {
+        display: block;
+    }
 }
+
