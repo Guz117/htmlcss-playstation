@@ -100,7 +100,8 @@ header {
 }
 
 .sub-title, .description  {
-    color: var(--color-grey);
+    color: #797979
+    ;
 }
 
 .ps-big {
@@ -148,6 +149,11 @@ header {
 .new-releases img {
     width: 100%;
     border-radius: 25px;
+}
+/* new releases */
+
+.explore img {
+    width: 100%;
 }
 
 @media screen and (max-width: 992px) {
