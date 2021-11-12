@@ -6,6 +6,7 @@
     --color-blue: #2d64e6;
     --color-grey: #bebcbb;
     --color-light-grey: #d9dadc;
+    --color-dark-blue: #161c3b;
 }
 
 /* Extend Bootstrap Utilities */
@@ -184,6 +185,28 @@ header {
     width: 350px;
 }
 /* /PS Plus */
+
+/* PS Now */
+.ps-now {
+    width: 100%;
+    color: var(--color-white);
+    padding-top: 5em;
+}
+
+.bg-ps-now {
+    background-color: var(--color-dark-blue);
+    background-image: url(../img/ps-now-april-featured-image-block.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding-top: 5em;
+}
+
+.btn-explore-now {
+    background-color: var(--color-white);
+    border-radius: 15px;
+    color: var(--color-black);
+}
 
 @media screen and (max-width: 992px) {
     .dropdown-menu .px-20 {
