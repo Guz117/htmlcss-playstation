@@ -51,7 +51,7 @@ header {
     z-index: 999;
 }
 
-/* /nav bar */    
+/* /nav bar */
 
 /* jambotron */
 
@@ -152,8 +152,37 @@ header {
 }
 /* new releases */
 
+/* explore */
 .explore img {
     width: 100%;
+}
+/* /explore */
+
+/* PS Plus */
+.ps-plus {
+    width: 100%;
+    color: var(--color-black);
+    padding-top: 5em;
+}
+
+.bg-ps-plus {
+    background-color: var(--color-grey);
+    background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding-top: 5em;
+}
+
+.btn-explore {
+    background-color: var(--color-light-grey);
+    border-radius: 15px;
+    color: var(--color-blue);
+}
+
+.banner-ps-plus {
+    width: 350px;
+    
 }
 
 @media screen and (max-width: 992px) {
