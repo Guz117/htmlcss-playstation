@@ -8,12 +8,9 @@
     --color-light-grey: #d9dadc;
 }
 
-.flex {
-    display: flex;
-}
-
-.my {
-    justify-content: flex-end;
+/* Extend Bootstrap Utilities */
+.px-20 {
+    padding: 0 20rem!important;
 }
 
 a {
@@ -24,6 +21,7 @@ body {
     font-family: Helvetica, arial, sans-serif;
 }
 
+/* nav */
 .nav-top {
     background-color: var(--color-black);
 }
@@ -38,6 +36,18 @@ body {
     border-radius: 15px;
 }
 
-.dropdown-item {
-    display: inline-block;
+.dropdown-menu {
+    border: none;
+    width: 100%;
 }
+
+nav {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+    .dropdown-menu .px-20 {
+        padding: 0!important;
+    }
+}
+    
