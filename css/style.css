@@ -182,8 +182,8 @@ header {
 
 .banner-ps-plus {
     width: 350px;
-    
 }
+/* /PS Plus */
 
 @media screen and (max-width: 992px) {
     .dropdown-menu .px-20 {
