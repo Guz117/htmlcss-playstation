@@ -28,23 +28,60 @@ body {
     background-color: var(--color-black);
 }
 
-.btn-nav::after {
-    content: none;
+.navbar {
+    background-color: var(--color-white);
 }
 
-.navbar-nav .navbar-nav .sign-in {
-    background-color: var(--color-light-black);
-    color: var(--color-white);
-    border-radius: 15px;
+.nav-bottom .dropdown .list-inline-item img {
+    width: 5em;
 }
 
-.dropdown-menu {
-    border: none;
-    width: 100%;
+.fa-chevron-up {
+    display: none; 
 }
 
-nav {
-    font-weight: 600;
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--color-blue);
+}
+
+.nav-bottom .navbar-nav .nav-item .arrow:focus-within  .fa-chevron-up {
+    display: inline-block;
+    color: var(--color-blue);
+}
+
+.nav-bottom .navbar-nav .nav-item .arrow:focus-within  .fa-chevron-down {
+    display: none;
+}
+
+.input-lens {
+    display: none;
+}
+
+.navbar-nav .dropdown-menu .list-sub-link .sub-link::before {
+    display: inline-block;
+    content: '';
+    width: 3px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--color-blue);
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 5px 3px #4643439d;
+}
+
+.navbar-nav .dropdown-menu .list-sub-link .sub-link:hover {
+    color: #2d64e6;
+    background-color: none;
+    box-shadow: none;
+}
+
+.btn-dark:hover {
+    box-shadow: 0 0 0 2px var(--color-white),
+                0 0 0 4px var(--color-black);
 }
 
 header {
@@ -84,6 +121,25 @@ header {
     background-color: var(--color-red);
     border-radius: 15px;
     color: var(--color-white);
+    padding: 0.3em 0.8em;
+}
+
+.btn-red {
+    border-radius: 20px;
+    color: var(--color-white);
+    padding: 0.1em 0.09em;
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+}
+
+.btn-red:hover {
+    border: 2px solid var(--color-red);  
+    cursor: pointer;
+} 
+
+.btn-red:hover a {
+    color: var(--color-white);
+    padding: 0.2em 0.7em;
 }
 /* /jambotron */
 
@@ -93,6 +149,14 @@ header {
     width: 100%;
     border-radius: 25px;
 }
+
+.up:hover img {
+    border: 2px solid var(--color-blue);
+    padding: 2px;
+    margin-top: -1em;
+    cursor: pointer;
+}
+
 /* /games-ret-rat */
 
 /* no limits */
@@ -114,6 +178,7 @@ header {
     background-color: var(--color-blue);
     border-radius: 15px;
     color: var(--color-white);
+    padding: 0.3em 0.8em;
 }
 
 .device {
@@ -123,6 +188,25 @@ header {
 .device:hover {
     opacity: 1;
     border-bottom: 2px solid var(--color-blue);
+    cursor: pointer;
+}
+
+.btn-blue {
+    border-radius: 20px;
+    color: var(--color-white);
+    padding: 0.1em 0.09em;
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+}
+
+.btn-blue:hover {
+    border: 2px solid var(--color-blue);  
+    cursor: pointer;
+} 
+
+.btn-blue:hover a {
+    color: var(--color-white);
+    padding: 0.2em 0.7em;
 }
 /* no limits */
 
@@ -180,6 +264,25 @@ header {
     background-color: var(--color-light-grey);
     border-radius: 15px;
     color: var(--color-blue);
+    padding: 0.3em 0.8em;
+}
+
+.btn-grey {
+    border-radius: 20px;
+    color: var(--color-white);
+    padding: 0.1em 0.09em;
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+}
+
+.btn-grey:hover {
+    border: 2px solid var(--color-light-grey);  
+    cursor: pointer;
+} 
+
+.btn-grey:hover a {
+    color: var(--color-blue);
+    padding: 0.2em 0.7em;
 }
 
 .banner-ps-plus {
@@ -207,6 +310,25 @@ header {
     background-color: var(--color-white);
     border-radius: 15px;
     color: var(--color-black);
+    padding: 0.3em 0.8em;
+}
+
+.btn-white {
+    border-radius: 20px;
+    color: var(--color-white);
+    padding: 0.1em 0.09em;
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+}
+
+.btn-white:hover {
+    border: 2px solid var(--color-white);  
+    cursor: pointer;
+} 
+
+.btn-white:hover a {
+    color: var(--color-black);
+    padding: 0.2em 0.7em;
 }
 
 /* social */
@@ -220,7 +342,6 @@ header {
     background-color: var(--color-blue-footer);
     color: var(--color-white);
 }
-
 
 .globe {
     width: 16px;
@@ -255,6 +376,11 @@ ul {
     display: none;
 }
 
+#info {
+    text-decoration: underline;
+}
+/* /footer */
+
 @media screen and (max-width: 992px) {
     .dropdown-menu .px-20 {
         padding: 0!important;
@@ -270,3 +396,17 @@ ul {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .navbar-nav {
+        align-items: flex-start!important;
+    }
+    .btn-dark {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+    .input-lens {
+        display: block;
+    }
+    .lens {
+        display: none;
+    }
